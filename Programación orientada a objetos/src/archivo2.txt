@@ -1,0 +1,42 @@
+M0190753;The Lion King;118;Drama;3.45;625
+M0190754;Onward;102;Accion;3.75;48
+M0190755;Happy Death Day;96;Misterio;3.4;65
+M0190756;Beauty and the Beast;129;Accion;3.55;15
+M0198913;Miss Americana;86;Drama;4.13;89
+S07704010101;Outlander;Sassenach;51;Drama;4.1;270
+S07704010102;Outlander;Castle Leoch;44;Drama;4.05;451
+S07704010103;Outlander;The Way Out;45;Drama;4.3;362
+S07704010104;Outlander;The Gathering;47;Drama;4.15;84
+S07704010105;Outlander;Rent;45;Drama;4.45;319
+S07704010106;Outlander;The Garrison Commander;51;Drama;4.55;327
+S07704010107;Outlander;The Wedding;52;Drama;4.35;374
+S07704010108;Outlander;Both Sides Now;50;Drama;4.6;205
+S07704010109;Outlander;The Reckoning;55;Drama;4.35;226
+S07704010110;Outlander;By the Pricking of My Thumbs;57;Drama;4.6;133
+S07704010201;Once Upon A Time;Broken;53;Misterio;4.45;168
+S07704010202;Once Upon A Time;We Are Both;54;Misterio;4.5;292
+S07704010203;Once Upon A Time;Lady of the Lake;56;Misterio;4.6;476
+S07704010204;Once Upon A Time;The Crocodile;60;Misterio;4.75;88
+S07704010205;Once Upon A Time;The Doctor;56;Misterio;4.65;173
+S07704010206;Once Upon A Time;Tallahassee;54;Misterio;4.8;307
+S07704010207;Once Upon A Time;Child of the Moon;58;Misterio;4.65;492
+S07704010208;Once Upon A Time;Into the Deep;57;Misterio;4.75;436
+S07404010101;WandaVision;Filmed Before a Live Studio Audience;27;Drama;4.3;259
+S07404010102;WandaVision;Don't Touch That Dial;34;Drama;4.25;305
+S07404010103;WandaVision;Now in Color;30;Drama;4.45;286
+S07404010104;WandaVision;We Interrupt This Program;29;Drama;4.5;215
+S07404010105;WandaVision;On a Very Special Episode...;42;Drama;4.4;179
+S07404010106;WandaVision;All-New Halloween Spooktacular!;31;Drama;4.45;224
+S07404010107;WandaVision;Breaking the Fourth Wall;31;Drama;4.55;489
+S07404010108;WandaVision;Previously On;40;Drama;4.7;403
+S07404010109;WandaVision;The Series Finale;47;Drama;4.9;475
+S07404010201;Stranger Things;Chapter One: MADMAX;48;Accion;4.15;184
+S07404010202;Stranger Things;Chapter Two: Trick or Treat Freak;56;Accion;4.2;113
+S07404010203;Stranger Things;Chapter Three: The Pollywog;51;Accion;4.35;50
+S07404010204;Stranger Things;Chapter Four: Will the Wise;46;Accion;4.35;105
+S07404010205;Stranger Things;Chapter Five: Dig Dug;58;Accion;4.45;220
+S07404010206;Stranger Things;Chapter Six: The Spy;51;Accion;4.6;59
+S07404010207;Stranger Things;Chapter Seven: The Lost Sister;45;Accion;3.05;219
+S07404010208;Stranger Things;Chapter Eight: The Mind Flayer;47;Accion;4.65;421
+S07404010209;Stranger Things;Chapter Nine: The Gate;62;Accion;4.7;163
+M0150756;Rebecca;121;Misterio;4.3;198

@@ -1,0 +1,220 @@
+---
+title: "ev02"
+Name: "Jesús Jiménez Aguilar (A01735227)"
+output: html_notebook
+---
+
+https://drive.google.com/drive/folders/1fudUig2Dlfisb0JDMng3h7C-UpeaJTQE?usp=sharing
+
+```{r Paqueterias}
+install.packages("ape")
+install.packages("phangorn")
+install.packages("phytools")
+install.packages("geiger")
+install.packages("parallel")
+install.packages("Biostrings")
+install.packages("BiocGenerics")
+install.packages("stats")
+install.packages("base")
+install.packages("s4Vectors")
+install.packages("stats4")
+install.packages("IRanges")
+install.packages("grDevices")
+
+install.packages("adegenet")
+install.packages("ggtree")
+install.packages("RSQLite")
+install.packages("fastmap")
+install.packages("ggmsa")
+install.packages("ggplot2")
+install.packages("ade4")
+
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("Biostrings")
+
+
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("DECIPHER")
+
+
+if (!requireNamespace("BiocManager", quietly=TRUE))
+  install.packages("BiocManager")
+BiocManager::install("msa")
+```
+
+```{r Activar Librerias}
+library("Biostrings")
+library("seqinr")
+library("adegenet")
+library("ape")
+library("ggtree")
+library("DECIPHER")
+library("viridis")
+library("ggplot2")
+library("Package")
+library("ade4")
+```
+
+```{r Lectura de Formatos Fasta}
+
+Vision_Americano<-read.fasta("AmericanMink.fasta")
+Simio<-read.fasta("Apes.fasta")
+Murcielago<-read.fasta("Bat.fasta")
+Toro<-read.fasta("Bovine.fasta")
+Gato<-read.fasta("Cat.fasta")
+Perro<-read.fasta("Dog.fasta")
+Eucariota<-read.fasta("Eukaryotes.fasta")
+Lobo_Gris<-read.fasta("GrayWolf.fasta")
+Primate<-read.fasta("GreenMonkey.fasta")
+Hamster<-read.fasta("Hamster.fasta")
+Humano<-read.fasta("Human.fasta")
+Leon<-read.fasta("Lion.fasta")
+Tigre_DMalasia<-read.fasta("MalayanTiger.fasta")
+Raton<-read.fasta("Mice.fasta")
+Pantera<-read.fasta("Phanter.fasta")
+Conejo<-read.fasta("Rabbit.fasta")
+Tejon<-read.fasta("Mustalinae.fasta")
+Tetraedo<-read.fasta("Tetrapods.fasta")
+Tigre<-read.fasta("Tigre.fasta")
+Comadreja<-read.fasta("Weasel.fasta")
+```
+
+```{r Longitud de secuencias}
+length(Comadreja[[1]])
+length(Conejo[[1]])
+length(Gato[[1]])
+length(Eucariota[[1]])
+length(Hamster[[1]])
+length(Humano[[1]])
+length(Leon[[1]])
+length(Lobo_Gris[[1]])
+length(Murcielago[[1]])
+length(Pantera[[1]])
+length(Perro[[1]])
+length(Primate[[1]])
+length(Raton[[1]])
+length(Simio[[1]])
+length(Tejon[[1]])
+length(Tetraedo[[1]])
+length(Tigre[[1]])
+length(Tigre_DMalasia[[1]])
+length(Toro[[1]])
+length(Vision_Americano[[1]])
+```
+
+```{r Gráfico Comparativo}
+compara<-function(Comadreja, Conejo, Eucariota, Gato, Hamster, Humano, Leon, Lobo_Gris, Murcielago, Pantera, Perro, Primate, Raton, Simio, Tejon, Tetraedo, Tigre, Tigre_DMalasia, Toro, Vision_Americano) {
+  par(mfrow=c(1,4))
+  barplot(table(Comadreja),col=1:4)
+  barplot(table(Conejo),col=1:4)
+  barplot(table(Eucariota),col=1:4)
+  barplot(table(Gato),col=1:4)
+  barplot(table(Hamster),col=1:4)
+  barplot(table(Humano),col=1:4)
+  barplot(table(Leon),col=1:4)
+  barplot(table(Lobo_Gris),col=1:4)
+  barplot(table(Murcielago),col=1:4)
+  barplot(table(Pantera),col=1:4)
+  barplot(table(Perro),col=1:4)
+  barplot(table(Primate),col=1:4)
+  barplot(table(Raton),col=1:4)
+  barplot(table(Simio),col=1:4)
+  barplot(table(Tejon),col=1:4)
+  barplot(table(Tetraedo),col=1:4)
+  barplot(table(Tigre),col=1:4)
+  barplot(table(Tigre_DMalasia),col=1:4)
+  barplot(table(Toro),col=1:4)
+  barplot(table(Vision_Americano),col=1:4)
+}
+compara(Comadreja,Conejo,Eucariota,Gato,Hamster,Humano,Leon,Lobo_Gris,Murcielago,Pantera,Perro,Primate,Raton,Simio,Tejon,Tetraedo,Tigre,Tigre_DMalasia,Toro,Vision_Americano)
+```
+
+*Interpratación: Se despliegan graficas que contienen el número de bases de ADN que contienen cada una de las variantea del genoma SARSCOV2 y se comparan de acuerdo a la especie a la que pertenecen.*
+
+```{r Porcentaje de GC}
+print((GC(Comadreja[[1]]))*100)
+print((GC(Conejo[[1]]))*100)
+print((GC(Eucariota[[1]]))*100)
+print((GC(Gato[[1]]))*100)
+print((GC(Hamster[[1]]))*100)
+print((GC(Humano[[1]]))*100)
+print((GC(Leon[[1]]))*100)
+print((GC(Lobo_Gris[[1]]))*100)
+print((GC(Murcielago[[1]]))*100)
+print((GC(Pantera[[1]]))*100)
+print((GC(Perro[[1]]))*100)
+print((GC(Primate[[1]]))*100)
+print((GC(Raton[[1]]))*100)
+print((GC(Simio[[1]]))*100)
+print((GC(Tejon[[1]]))*100)
+print((GC(Tetraedo[[1]]))*100)
+print((GC(Tigre[[1]]))*100)
+print((GC(Tigre_DMalasia[[1]]))*100)
+print((GC(Toro[[1]]))*100)
+print((GC(Vision_Americano[[1]]))*100)
+```
+
+```{r Vector especies}
+especies <- c(Comadreja, Conejo, Eucariota, Gato, Hamster, Humano, Leon, Lobo_Gris, Murcielago, Pantera, Perro, Primate, Raton, Simio, Tejon, Tetraedo, Tigre, Tigre_DMalasia, Toro, Vision_Americano) 
+```
+
+```{r Obtener las secuencias}
+especies_sequences <- especies
+```
+
+```{r Estructura del DNABin}
+str(especies_sequences)
+```
+
+```{r Concentraremos en un archivo todas las secuencias}
+write.dna(especies_sequences, file="especies_seqs.fasta", format="fasta", append= FALSE, nbcol= 6, colsep= " ", colw=10)
+```
+
+```{r Cargamos la secuencias}
+especies_seq_not_align <- readDNAStringSet("especies_seqs.fasta", format= "fasta")
+especies_seq_not_align 
+```
+
+```{r Alineamiento de las secuencias}
+especies_seq_not_align <- OrientNucleotides(especies_seq_not_align)
+especies_seq_align <- AlignSeqs(especies_seq_not_align)
+BrowseSeqs(virus_seq_align, highlight=0)
+```
+
+```{r Guardar el resultado}
+writeXStringSet(especies_seq_align, file="especies_seq_align.fasta")
+```
+
+```{r Obtener el nuevo archivo}
+especies_aligned <- read.alignment("especies_seq_align.fasta", format= "fasta")
+```
+
+```{r Crear una matriz de distancia}
+matriz_distancia <- dist.alignment(especies_aligned, matrix="similarity")
+```
+
+```{r Visualiza la matriz de distancia}
+temp <- as.data.frame(as.matrix(matriz_distancia))
+table.paint(temp, cleg=0, clabel.row=.5, clabel.col=.5) + scale_color_viridis()
+```
+
+```{r Creacion del arbol con el paquete ape}
+especies_tree <- nj(matriz_distancia)
+class(especies_tree)
+especies_tree <- ladderize(especies_tree)
+```
+
+```{r Plot del arbol}
+plot(especies_tree, cex = 0.6)
+title("Variaciones del virus SARS-Cov-2 en especies, 2021")
+```
+
+*Interpratación: Se despliega el arbol jerarquico de las variantes del genoma SARSCOV2 de acuerdo a la especie a la que pertenecen y se puede notar que la mayoría de las variantes tienen una relacion sobre todo en el caso de los roedores y del ser humano con los primates.*
+
+

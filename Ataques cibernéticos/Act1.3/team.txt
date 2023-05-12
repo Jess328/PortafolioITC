@@ -1,0 +1,10 @@
+Integrantes:
+
+  *  A01735227 Jesús Jiménez Aguilar
+Realizó la clase Bitacora así como los constructores de dicha clase y parte de la función main.
+
+  *  A01734879 Alejandro Armenta Arellano
+Realizó las funciones de ordenaIntercambio y ordenaInsercion, así como parte de la función main.
+
+  *  A01735346 Daniela Berenice Hernandez de Vicente
+Realizó la función busquedaBinaria y parte de la función main.

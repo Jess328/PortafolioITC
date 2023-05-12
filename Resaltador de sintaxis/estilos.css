@@ -1,0 +1,41 @@
+body {
+    font-family: "Courier New", Courier, 
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .include {
+    color: blue;
+  }
+  
+  .id {
+      color: darkgreen;
+  }
+
+  .reserved {
+    color: red;
+  }
+  
+  .int {
+    color: lightseagreen;
+  }
+  
+  .real {
+    color: yellow;
+  }
+  
+  .string {
+    color: darkgray;
+  }
+
+  .op {
+      color: orange;
+  }
+
+  .comment {
+      color: black;
+  }
+
+  .punctuation {
+      color: darkmagenta;
+  }

@@ -1,0 +1,74 @@
+M0190750;Dunkirk;107;Drama;3.3;48
+M0190751;Little Woman;135;Drama;3.5;60
+M0190752;Ready Player One;139;Accion;3.35;50
+M0190801;Call me by your name;132;Drama;4.85;122
+M0190805;Knives out;130;Misterio;4.7;348
+S06508010101;Love, Victor;Welcome to Creekwood;30;Drama;4.55;418
+S06508010102;Love, Victor;Stoplight Party;27;Drama;4.4;341
+S06508010103;Love, Victor;Battle of the Bands;25;Drama;4.35;165
+S06508010104;Love, Victor;The Truth Hurts;28;Drama;4.4;258
+S06508010105;Love, Victor;Sweet Sixteen;27;Drama;4.55;447
+S06508010106;Love, Victor;Creekwood Nights;24;Drama;4.6;315
+S06508010107;Love, Victor;What Happens In Willacoochee;29;Drama;4.6;472
+S06508010108;Love, Victor;Boys' Trip;30;Drama;4.5;238
+S06508010109;Love, Victor;Who the Hell Is B;28;Drama;4.8;377
+S06508010110;Love, Victor;Spring Fling;31;Drama;4.75;352
+S06508010201;Elite;20 horas desaparecido;52;Misterio;4.4;252
+S06508010202;Elite;34 horas desaparecido;48;Misterio;4.25;445
+S06508010203;Elite;36 horas desaparecido;54;Misterio;4.4;340
+S06508010204;Elite;59 horas desaparecido;49;Misterio;4.4;188
+S06508010205;Elite;63 horas desaparecido;50;Misterio;4.4;451
+S06508010206;Elite;66 horas desaparecido;48;Misterio;4.55;487
+S06508010207;Elite;84 horas desaparecido;53;Misterio;4.45;170
+S06508010208;Elite;00 horas desaparecido;50;Misterio;4.4;476
+S06508010301;Game of Thrones;Valar Dohaeris ;55;Drama;4.4;133
+S06508010302;Game of Thrones;Dark Wings Dark Words;56;Drama;4.3;197
+S06508010303;Game of Thrones;Walk of Punishment ;56;Drama;4.45;411
+S06508010304;Game of Thrones;And Now His Watch Is Ended ;53;Drama;4.8;430
+S06508010305;Game of Thrones;Kissed by Fire;57;Drama;4.5;286
+S06508010306;Game of Thrones;The Climb ;53;Drama;4.4;184
+S06508010307;Game of Thrones;The Bear and the Maiden Fair ;58;Drama;4.35;412
+S06508010308;Game of Thrones;Second Sons ;56;Drama;4.5;350
+S06508010309;Game of Thrones;The Rains of Castamere;51;Drama;4.95;478
+S06508010310;Game of Thrones;Mhysa;63;Drama;4.6;105
+S06508010101;The Falcon and the Winter Soldier;New World Order;48;Accion;4.55;352
+S06508010102;The Falcon and the Winter Soldier;The Star-Spangled Man;48;Accion;4.85;230
+S06508010103;The Falcon and the Winter Soldier;Power Broker;51;Accion;4.45;202
+S06508010104;The Falcon and the Winter Soldier;The Whole World Is Watching;54;Accion;4.4;177
+S06508010105;The Falcon and the Winter Soldier;Truth;58;Accion;4.35;353
+S06508010106;The Falcon and the Winter Soldier;One World, One People;49;Accion;4.85;58
+S06508010501;Lucifer;Really Sad Devil Guy;52;Misterio;4.25;424
+S06508010502;Lucifer;Lucifer! Lucifer! Lucifer!;58;Misterio;4.25;144
+S06508010503;Lucifer;¡Diablo!;55;Misterio;4.25;380
+S06508010504;Lucifer;It Never Ends Well for the Chicken;56;Misterio;4.35;467
+S06508010505;Lucifer;Detective Amenadiel;56;Misterio;4.3;462
+S06508010506;Lucifer;BluBallz;56;Misterio;4;434
+S06508010507;Lucifer;Nuestro mojo;57;Misterio;4.5;358
+S06508010508;Lucifer;Spoiler Alert;57;Misterio;4.95;360
+S06508010509;Lucifer;Family Dinner;62;Misterio;4.75;252
+S06508010510;Lucifer;Bloody Celestial Karaoke Jam;61;Misterio;4.55;95
+M0190787;The Purge;85;Accion;4.25;375
+M0160755;Pirates of the Caribbean: The Curse of the Black Pearl;143;Misterio;4.5;101
+S06504010101;La Casa de Papel;Efectuar lo acordado;47;Accion;4.15;150
+S06504010102;La Casa de Papel;Imprudencias letales;41;Accion;4.2;167
+S06504010103;La Casa de Papel;Errar al disparar;50;Accion;4.1;147
+S06504010104;La Casa de Papel;Caballo de Troya;51;Accion;4.15;255
+S06504010105;La Casa de Papel;El dia de la marmota;42;Accion;4.2;183
+S06504010106;La Casa de Papel;La cálida Guerra Fria;43;Accion;4.15;400
+S06504010107;La Casa de Papel;Refrigerada inestabilidad;47;Accion;4.2;289
+S06504010108;La Casa de Papel;Tu lo has buscado;43;Accion;4.1;398
+S06504010109;La Casa de Papel;El que la sigue la consigue ;42;Accion;4.35;216
+S06504010101;La Casa de las Flores;Narciso;47;Drama;4.15;150
+S06504010102;La Casa de las Flores;Crisantemo;40;Drama;4.2;167
+S06504010103;La Casa de las Flores;Lirio;33;Drama;4.1;147
+S06504010104;La Casa de las Flores;Petunia;32;Drama;4.15;255
+S06504010105;La Casa de las Flores;Dalia;30;Drama;4.2;183
+S06504010106;La Casa de las Flores;Magnolia;37;Drama;4.15;400
+S06504010107;La Casa de las Flores;Peonia;30;Drama;4.2;289
+S06504010108;La Casa de las Flores;Bromelia;33;Drama;4.1;398
+S06504010109;La Casa de las Flores;Tulipan;34;Drama;4.35;216
+M0160755;The Devil Wears Prada;110;Drama;4.5;101
+M0650801;Bird Box;124;Misterio;4.55;277
+M0650808;Venom;140;Accion;4.85;270
+M0650809;The 5th Wave;117;Accion;4.8;330
+M0650800;Who Framed Roger Rabbit?;104;Misterio;4.85;482

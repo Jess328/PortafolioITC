@@ -1,0 +1,10 @@
+Integrantes:
+
+  *  A01735227 Jesús Jiménez Aguilar
+Realizó las funciones getIP, separarIP, numIP, particion, quickSort y el main.
+
+  *  A01734879 Alejandro Armenta Arellano
+Realizó la definición de la clase LinkedList y las funciones que implicaba esta clase.
+
+  *  A01735346 Daniela Berenice Hernandez de Vicente
+Realizó la definición de la clase NodeD y las funciones que implicaba esta clase.

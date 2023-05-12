@@ -1,0 +1,113 @@
+---
+title: "ev01"
+Name: "Jesús Jiménez Aguilar (A01735227)"
+output: html_notebook
+---
+CUESTIONARIO : 
+
+1.Investiga, ¿Cuál es la situación actual de COVID-19 a nivel mundial, en México, en tu estado de origen y en tu municipio, alcaldía o colonia? Puedes iniciar tu búsqueda en el sitio de Johns Hopkins (Enlaces a un sitio externo.)
+*-A nivel mundial el COVID-19 ha provocado  un total de 3.061.478 muertes,    mientras que se han registrado 143.962.157 casos.*
+*-A nivel nacional en México el COVID-19 ha causado 213.597 defunciones y se   han registrado un total de 2.315.811 casos.*
+*-Ahora bien en el estado de Veracruz el COVID-19 ha causado un total de        9,366  defunciones y también se han registrado 59,507 casos.*
+*-Además, de acuerdo con los informes en Martinez de la Torre se han registrado alrededor de 777 casos y 134 defunciones aunque la realidad es muy distinta, ya que han existido casos de contagio/defunción que no se han informado a todo el publico.*
+
+2.¿Cuál fue la primera variante del virus que se propagó a todo el mundo?
+*La primera variante del virus que se propagó a todo el mundo fue la variante china (SARS-Cov-2).*
+
+3.¿Cuáles son las otras variantes del virus que existen en otras regiones del mundo?
+*Actualmente existen 5 variables en Estados Unidos, siendo estas la          B.1.1.7, la B.1.35, la P.1, B.1.43 y la B.1.43.*
+*Mientras que a lo largo del mundo existen 137 variantes, de las cuales      12 no están verificadas.*
+
+4.¿Cómo buscarías información de la variante del virus en tu país? 
+*Lo ideal sería buscar esta información en sitios de información             reconocidos y confiables, ya que mucha de la información que circula        hoy en día puede llegar a ser falsa.*
+
+5.Imagina que te encuentras en una situación similar a la de Li Wenliang, médico chino que intentó alertar sobre el brote de coronavirus en su país, pero fue detenido por las autoridades y obligado a retractarse, ¿qué harías en su caso? Selecciona un inciso:a) Lo reportas al centro de investigación o la universidad. b) Lo reportas a la prensa. c) Guardas la información. Elige y justifica tu respuesta. Revisa el siguiente video como apoyo:
+*Realmente creemos que ninguna de las respuestas anteriores es               correcta, pero también consideramos que la mejor en este caso podría        reportar al centro de investigación y a la universidad, ya que si se        reporta a la prensa podrían creer que no es real, y si guardamos la         información pues esta ya no serviría para prevenir la enfermedad, más       bien serviría para controlar los casos de la misma.*
+
+BIBLIOGRAFIA
+
+1.Johns Hopkins University and Medicine. (2021, 22 abril). COVID-19 Map. COVID-19 Map-Johns Hopkins University and Medicine. https://coronavirus.jhu.edu/map.html
+
+VERACRUZ, E. D. G. D. E. (s. f.). Portal Informativo COVID-19. GOBIERNO DEL ESTADO DE VERACRIZ Recuperado 27 de abril de 2021, de http://coronavirus.veracruz.gob.mx/mapa/
+
+3.El COVID-19 y su salud. (2020, 11 febrero). Centers for Disease Control and Prevention. https://espanol.cdc.gov/coronavirus/2019-ncov/transmission/variant.html
+
+4.CDC. (2020, 28 marzo). COVID Data Tracker. Centers for Disease Control and Prevention. https://covid.cdc.gov/covid-data-tracker/#global-variant-report-map
+
+
+INICIO EJERCICIOS
+
+```{r Librería}
+library("seqinr")
+```
+
+```{r Lectura de Variables}
+china1<-read.fasta("China1.fasta")
+china2<-read.fasta("China2.fasta")
+mexico1<-read.fasta("Mexico1.fasta")
+mexico2<-read.fasta("Mexico2.fasta")
+uk1<-read.fasta("Uk1.fasta")
+uk2<-read.fasta("Uk2.fasta")
+usa1<-read.fasta("USA1.fasta")
+usa2<-read.fasta("USA2.fasta")
+brazil1<-read.fasta("Brazil1.fasta")
+brazil2<-read.fasta("Brazil2.fasta")
+```
+
+```{r Longitud de secuencias}
+length(china1[[1]])
+length(china2[[1]])
+length(mexico1[[1]])
+length(mexico2[[1]])
+length(uk1[[1]])
+length(uk2[[1]])
+length(usa1[[1]])
+length(usa2[[1]])
+length(brazil1[[1]])
+length(brazil2[[1]])
+```
+
+```{r Porcentaje GC}
+print((GC(china1[[1]]))*100)
+print((GC(china2[[1]]))*100)
+print((GC(mexico1[[1]]))*100)
+print((GC(mexico2[[1]]))*100)
+print((GC(uk1[[1]]))*100)
+print((GC(uk1[[1]]))*100)
+print((GC(usa1[[1]]))*100)
+print((GC(usa2[[1]]))*100)
+print((GC(brazil1[[1]]))*100)
+print((GC(brazil2[[1]]))*100)
+```
+
+```{r secuencia complementaria}
+comp(china1[[1]])
+comp(china1[[1]])
+comp(mexico1[[1]])
+comp(mexico2[[1]])
+comp(uk1[[1]])
+comp(uk2[[1]])
+comp(usa1[[1]])
+comp(usa2[[1]])
+comp(brazil1[[1]])
+comp(brazil2[[1]])
+```
+
+```{r}
+compara<-function(china1,china2,mexico1,mexico2,uk1,uk2,usa1,usa2,brazil1,brazil2){
+  par(mfrow=c(1,2))
+  barplot(table(china1), col=1:4)
+  barplot(table(china2), col=1:4)
+  barplot(table(mexico1), col=1:4)
+  barplot(table(mexico2), col=1:4)
+  barplot(table(uk1), col=1:4)
+  barplot(table(uk2), col=1:4)
+  barplot(table(usa1), col=1:4)
+  barplot(table(usa2), col=1:4)
+  barplot(table(brazil1), col=1:4)
+  barplot(table(brazil2), col=1:4)
+}
+compara(china1,china2,mexico1,mexico2,uk1,uk2,usa1,usa2,brazil1,brazil2)
+```
+
+*Interpratación: Se despliegan graficas que contienen el número de residuos de desoxinucleotidos que contienen cada una de las variantea del genoma SARSCOV2 y se comparan de acuerdo al país de origen, en el caso de México se compara la variante nacional con la del estado de Puebla.*

@@ -1,0 +1,47 @@
+body {
+    padding: 2rem 2 rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    font-weight: 750;
+    background-color: black;
+}
+
+/* Variable / Identificador */
+.variable {
+    color: blue;
+}
+
+/* Número enteros y reales */
+.number {
+    color: blueviolet;
+}
+
+/* Operador */
+.operator {
+    color: white;
+}
+
+/* Comentario */
+.comment {
+    color: red;
+}
+
+/* Palabra reservada */
+.reserved {
+    color: orange;
+}
+
+/* String */
+.string {
+    color: darkgray;
+}
+
+/* Puntuación */
+.punctuation {
+    color: darkmagenta;
+}
+
+/* Includes */
+.includes {
+    color: yellow;
+}
